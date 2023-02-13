@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	 <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+	 <link href="css/element.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+  </head>
+  
+<body>
+
+
+  <section id="header"  class="cd-secondary-nav">
+	<nav class="navbar navbar-default navbar-fixed-top header_2">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Wedding Plan</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav">
+                    <li>
+                        <a class="tag_menu" href="index.html">HOME</a>
+                    </li>
+                     
+                    <li>
+                        <a class="tag_menu active_tab" href="blog.html">BLOG</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu" href="details.html">DETAIL</a>
+                    </li>
+					
+				    <li>
+                        <a class="tag_menu" href="shop.html">SHOP</a>
+                    </li>
+					
+                    <li>
+                        <a class="tag_menu" href="products.html">PRODUCT</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu" href="contact.html">CONTACT</a>
+                    </li>
+					
+					<li class="dropdown">
+					  <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="blog.html">Home</a></li>
+						<li><a href="blog.html">Blogpost</a></li>
+						<li><a href="blog.html">Detail</a></li>
+						<li><a href="blog.html">shop</a></li>
+					  </ul>
+                    </li>
+					
+                </ul>
+				 <ul class="nav navbar-nav navbar-right">
+				   <li class="dropdown">
+					  <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-shopping-bag"></i><span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a class="tag_menu_down" href="#">No products in the cart</a></li>
+					  </ul>
+                    </li>
+			       <li class="dropdown"><a href="#" class="top_tab dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-search"></i></a>
+                    <ul class="dropdown-menu" style="min-width: 300px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form class="navbar-form navbar-left" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">
+                                                Go!</button>
+                                        </span>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+				 </ul>
+				 <section id="side_box">
+				
+				  <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-list"></i></a>
+					<div id="sidebar-wrapper" class="">
+					  <ul class="sidebar-nav">
+						<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a>
+						<li class="sidebar-brand">
+						  <a href="index.html">DIGI HUB</a>						</li>
+					  </ul>
+					  <div class="wrap_inner clearfix text-center">
+					   <img class="img-circle i_width" src="img/1.jpg" alt="abc">
+					   <p class="para_1"> Lorem ipsum dolor sit amet,  adipiscing elit integer nec odio.</p>
+					   <div class="top_right clearfix">
+								<p>
+								 <a href="#"><i class="fa fa-pinterest"></i></a>
+								 <a href="#"><i class="fa fa-linkedin"></i></a>
+								 <a href="#"><i class="fa fa-dribbble"></i></a>
+								 <a href="#"><i class="fa fa-facebook"></i></a>
+								 <a href="#"><i class="fa fa-twitter"></i></a>
+								</p>
+	                   </div>
+					   <div class="grid wrap_inner_1 clearfix">
+					
+					    <figure class="effect-bubba">
+						<img src="img/2.jpg" alt="img16"/>
+						<figcaption>
+							<h2>Digi <span>Hub</span></h2>
+							<p>Lorem ipsum dolor sit elit integer nec odio.</p>
+							<a href="#">View more</a>						</figcaption>			
+		  </figure>
+	                    </div>
+					   
+					  </div>
+					  <div class="wrap_inner_2 clearfix">
+					    <h2>Contact Us</h2>
+						<input class="form-control" placeholder="Name" type="text">
+						<input class="form-control" placeholder="Email" type="text">
+						<input class="form-control" placeholder="Phone" type="text">
+						<textarea class="form-control form_1" placeholder="Type Text Here"></textarea>
+						<h3 class="text-center"><a href="#">Subscribe</a></h3>
+			
+					  </div>
+					  
+					</div>
+		
+	          </section>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+  
+  <section id="blog" class="clearfix">
+  <div class="blog_head">
+   <div class="container">
+    <div class="row">
+	 <div class="blog clearfix">
+	  <h2>Conubia Nostra</h2>
+	 </div>
+	</div>
+   </div>
+  </div>
+  </section>
+  
+  <section id="blog_2" class="clearfix">
+   <div class="container">
+    <div class="row">
+	 <div class="blog_2 clearfix">
+	  <div class="col-sm-9 blog_2_left clearfix">
+	   <div class="blog_2_left_top clearfix">
+	   <div class="blog_2_left_inner_1">
+	    <img class="img-responsive" src="img/25.jpg" alt="abc">
+	   </div>
+	   <div class="blog_2_left_inner_2">
+	    <h2><a href="#">Dignissim Lacinia</a></h2>
+		<h5><a href="#">Dapibus</a></h5>
+		<p>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero</p>
+	   </div>
+	   <div class="blog_2_left_inner_3">
+	    <div class="col-sm-4 monthly_left clearfix">
+		 <div class="monthly_left_inner">
+		  <h4><a href="#">22.Apr 2017</a></h4>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_middle clearfix">
+		 <div class="monthly_middle_inner">
+		  <ul>
+	  <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+	  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 </ul>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_right clearfix">
+		 <div class="monthly_left_inner">
+		  <h4 class="text-right"><a href="#">4 Comments</a></h4>
+		 </div>
+		</div>
+	   </div>
+	   </div>
+	   <div class="blog_2_left_top clearfix">
+	   <div class="blog_2_left_inner_1">
+	    <img class="img-responsive" src="img/26.jpg" alt="abc">
+	   </div>
+	   <div class="blog_2_left_inner_2">
+	    <h2><a href="#">Praesent libero</a></h2>
+		<h5><a href="#">Lacinia</a></h5>
+		<p>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero</p>
+	   </div>
+	   <div class="blog_2_left_inner_3">
+	    <div class="col-sm-4 monthly_left clearfix">
+		 <div class="monthly_left_inner">
+		  <h4><a href="#">22.Apr 2017</a></h4>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_middle clearfix">
+		 <div class="monthly_middle_inner">
+		  <ul>
+	  <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+	  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 </ul>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_right clearfix">
+		 <div class="monthly_left_inner">
+		  <h4 class="text-right"><a href="#">2 Comments</a></h4>
+		 </div>
+		</div>
+	   </div>
+	   <div class="blog_2_left_inner_4">
+	    <span class="tag_1"><i class="fa fa-quote-right"></i></span>
+		<h5><a href="#">Praesent mauris</a></h5>
+         <h2><i class="fa fa-quote-left"></i> <a href="#">Vestibulum lacinia arcu eget nulla nec<br> sed dignissim lacinia nunc. <i class="fa fa-quote-right"></i></a></h2>
+		 <h4>Ante Dapibus</h4>
+		 <div class="col-sm-6 rose_left clearfix">
+		 <div class="monthly_left_inner">
+		  <h3><a href="#">16.May 2017</a></h3>
+		 </div>
+		 </div>
+		 <div class="col-sm-6 rose_right clearfix">
+	     <div class="monthly_middle_inner monthly_middle_inner_2">
+		  <ul>
+	  <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+	  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 </ul>
+		 </div>
+		 </div>
+	   </div>
+	   </div>
+	   <div class="blog_2_left_top clearfix">
+	   <div class="blog_2_left_inner_1">
+	    <img class="img-responsive" src="img/27.jpg" alt="abc">
+	   </div>
+	   <div class="blog_2_left_inner_2">
+	    <h2><a href="#">Dignissim Lacinia</a></h2>
+		<h5><a href="#">Dapibus</a></h5>
+		<p>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero</p>
+	   </div>
+	   <div class="blog_2_left_inner_3">
+	    <div class="col-sm-4 monthly_left clearfix">
+		 <div class="monthly_left_inner">
+		  <h4><a href="#">21.Jan 2017</a></h4>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_middle clearfix">
+		 <div class="monthly_middle_inner">
+		  <ul>
+	  <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+	  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 </ul>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_right clearfix">
+		 <div class="monthly_left_inner">
+		  <h4 class="text-right"><a href="#">1 Comments</a></h4>
+		 </div>
+		</div>
+	   </div>
+	   <div class="blog_2_left_inner_5">
+	    <span class="tag_1"><i class="fa fa-link"></i></span>
+		<h5><a href="#">Taciti Sociosqu</a></h5>
+         <h2><a href="#">Tellus augue semper porta. Mauris massa.</a></h2>
+		 <div class="col-sm-6 rose_left clearfix">
+		 <div class="monthly_left_inner">
+		  <h3><a href="#">13.Apr 2018</a></h3>
+		 </div>
+		 </div>
+		 <div class="col-sm-6 rose_right clearfix">
+	     <div class="monthly_middle_inner monthly_middle_inner_2">
+		  <ul>
+	  <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+	  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 </ul>
+		 </div>
+		 </div>
+	   </div>
+	   </div>
+	   <div class="blog_2_left_top clearfix">
+	   <div class="blog_2_left_inner_1">
+	    <img class="img-responsive" src="img/28.jpg" alt="abc">
+	   </div>
+	   <div class="blog_2_left_inner_2">
+	    <h2><a href="#">Sagittis Ipsum</a></h2>
+		<h5><a href="#">Lacinia</a></h5>
+		<p>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero</p>
+	   </div>
+	   <div class="blog_2_left_inner_3 clearfix">
+	    <div class="col-sm-4 monthly_left clearfix">
+		 <div class="monthly_left_inner">
+		  <h4><a href="#">15.Feb 2018</a></h4>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_middle clearfix">
+		 <div class="monthly_middle_inner">
+		  <ul>
+	  <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+	  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 </ul>
+		 </div>
+		</div>
+		<div class="col-sm-4 monthly_right clearfix">
+		 <div class="monthly_left_inner">
+		  <h4 class="text-right"><a href="#">2 Comments</a></h4>
+		 </div>
+		</div>
+	   </div>
+	   <div class="blog_2_left_inner_6 clearfix">
+	    <ul>
+		 <li class="active_6"><a href="#">1</a></li>
+		 <li><a href="#">2</a></li>
+		 <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+		</ul>
+	   </div>
+	   </div>
+	  </div>
+	  <div class="col-sm-3 blog_2_right clearfix">
+	   <div class="blog_2_right_inner_1">
+	    <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
+                      <div class="img"><img  class="img-circle" src="img/31.jpg" alt="img"></div>
+                      <div class="info">
+                      </div></a></div>
+	   </div>
+	   <div class="blog_2_right_inner_2 clearfix">
+	     <h4>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos.</h4>
+		 <p>Consectetur</p>
+		 <h3><a href="#">Sociosqu</a></h3>
+		 <h3><a href="#">Nulla Quis</a></h3>
+		 <h3><a href="#">Lacinia</a></h3>
+		 <h3><a href="#">Dapibus</a></h3>
+		 <p>Follow</p>
+	   </div>
+	   <div class="blog_2_right_inner_3 clearfix">
+	    <div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/32.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+		<div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/33.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+		<div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/34.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+	   </div>
+	   <div class="blog_2_right_inner_3 clearfix">
+	    <div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/35.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+		<div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/36.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+		<div class="col-sm-4 blog_2_right_inner_3_left clearfixt">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/37.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+	   </div>
+	   <div class="blog_2_right_inner_3 clearfix">
+	    <div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/38.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+		<div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/39.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+		<div class="col-sm-4 blog_2_right_inner_3_left clearfix">
+		 <div class="blog_2_right_inner_3_left_inner">
+		  <p><a href="#"><img src="img/40.jpg" alt="abc"></a></p>
+		 </div>
+		</div>
+	   </div>
+	   <div class="blog_2_right_inner_2 clearfix">
+		 <p>Recent Posts</p>
+		 <h2><a href="#">Nulla quis at nibh</a></h2>
+		 <h5><a href="#">20. Jun 2017.</a></h5>
+		 <hr class="hr_2">
+		 <h2><a href="#">Conubia Nostra</a></h2>
+		 <h5><a href="#">19. July 2017.</a></h5>
+		 <hr class="hr_2">
+		 <h2><a href="#">Taciti Sociosqu</a></h2>
+		 <h5><a href="#">25. Jun 2017.</a></h5>
+		 <hr class="hr_2">
+		 <p>Egit</p>
+		 <ul>
+		  <li><a href="#">Litora</a></li>
+		  <li><a href="#">Massa</a></li>
+		 </ul>
+		 <ul>
+		  <li><a href="#">Vestibulum</a></li>
+		  <li><a href="#">Sagittis</a></li>
+		 </ul>
+		 <ul>
+		  <li><a href="#">Mauris</a></li>
+		  <li><a href="#"> Arcu</a></li>
+		  <li><a href="#"> Ante</a></li>
+		 </ul>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </section>
+  
+  <section id="center_7" class="clearfix">
+	<div class="center_7 clearfix">
+	 <p><img src="img/18.jpg" alt="abc"></p>
+	 <h2>Integer nec odionec odio</h2>
+	 <h5>imperdiet</h5>
+	</div>
+	<div class="center_7_middle clearfix">
+	 <ul>
+	  <li><div class="center_7_middle clearfix"><div class="grid clearfix">
+					<figure class="effect-jazz">
+						<img src="img/19.jpg" alt="img25"/>
+						<figcaption>
+							<a href="#">View more</a>						</figcaption>			
+		  </figure>
+					
+	  </div></div></li>
+	  <li><div class="center_7_middle clearfix"><div class="grid clearfix">
+					<figure class="effect-jazz">
+						<img src="img/20.jpg" alt="img25"/>
+						<figcaption>
+							<a href="#">View more</a>						</figcaption>			
+		  </figure>
+					
+	  </div></div></li>
+	  <li><div class="center_7_middle clearfix"><div class="grid clearfix">
+					<figure class="effect-jazz">
+						<img src="img/21.jpg" alt="img25"/>
+						<figcaption>
+							<a href="#">View more</a>						</figcaption>			
+		  </figure>
+					
+	  </div></div></li>
+	  <li><div class="center_7_middle clearfix"><div class="grid clearfix">
+					<figure class="effect-jazz">
+						<img src="img/22.jpg" alt="img25"/>
+						<figcaption>
+							<a href="#">View more</a>						</figcaption>			
+		  </figure>
+					
+	  </div></div></li>
+	  <li><div class="center_7_middle clearfix"><div class="grid clearfix">
+					<figure class="effect-jazz">
+						<img src="img/23.jpg" alt="img25"/>
+						<figcaption>
+							<a href="#">View more</a>						</figcaption>			
+		  </figure>
+					
+	  </div></div></li>
+	 </ul>
+	</div>
+	<div class="center_7_bottom clearfix">
+	 <ul>
+	  <li><a href="#"><i class="fa fa-facebook-f"></i>Facebook</a></li>
+	  <li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+	  <li><a href="#"><i class="fa fa-pinterest"></i>Pinterest</a></li>
+	  <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+	 </ul>
+	</div>
+  </section>
+  
+  <section id="footer" class="clearfix">
+   <div class="container">
+    <div class="row">
+	<div class="footer clearfix">
+	 <div class="col-sm-4 footer_left clearfix">
+	  <div class="footer_left_inner">
+	   <h4>Semper Porta</h4>
+	   <h3><a href="#">Praesent Mauris Nec</a></h3>
+	   <h2><a href="#">23. Apr 2017.</a></h2>
+	   <h3><a href="#">Nulla Quis Sem</a></h3>
+	   <h2><a href="#">26. Apr 2017.</a></h2>
+	  </div>
+	 </div>
+	 <div class="col-sm-4 footer_middle clearfix">
+	  <div class="footer_middle_inner">
+	   <h2><a href="#">Wedding Plan</a></h2>
+	   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio libero<br> quis sem at nibh elementum imperdiet</p>
+	   <h3>Email us: <a href="#">info@gmail.com</a></h3>
+	   <h3>Phone us: <a href="#"> 6394 835 2525</a></h3>
+	   <h3>Visit us: <a href="#">92 Semper Porta Bk, USA</a></h3>
+	  </div>
+	 </div>
+	 <div class="col-sm-4 footer_center clearfix">
+	  <div class="footer_left_inner">
+	   <h4>Fusce Porta</h4>
+	   <h3><a href="#">Sed Massa</a></h3>
+	   <h3><a href="#">Duis The Arcu</a></h3>
+	   <h3><a href="#">KGRT</a></h3>
+	   <h3><a href="#">Our Services</a></h3>
+	  </div>
+	 </div>
+	</div>
+	<div class="footer_last clearfix">
+	 <p class="website">© 2013 Your Website Name. All rights reserved | Design by<a href="http://www.templateonweb.com"> TemplateOnWeb</a></p>
+	</div>
+	</div>
+   </div>
+  </section>
+  
+ <script>
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
+ <script>
+$(document).ready(function(){
+
+/*****Fixed Menu******/
+var secondaryNav = $('.cd-secondary-nav'),
+   secondaryNavTopPosition = secondaryNav.offset().top;
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > secondaryNavTopPosition ) {
+			secondaryNav.addClass('is-fixed');	
+		} else {
+			secondaryNav.removeClass('is-fixed');
+		}
+	});	
+	
+});
+</script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+
+</body>
+      
+</html>

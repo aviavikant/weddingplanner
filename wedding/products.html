@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	 <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+	 <link href="css/element.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+  </head>
+  
+<body>
+
+
+  <section id="header"  class="cd-secondary-nav">
+	<nav class="navbar navbar-default navbar-fixed-top header_2">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Wedding Plan</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav">
+                    <li>
+                        <a class="tag_menu" href="index.html">HOME</a>
+                    </li>
+                     
+                    <li>
+                        <a class="tag_menu" href="blog.html">BLOG</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu" href="details.html">DETAIL</a>
+                    </li>
+					
+					
+				    <li>
+                        <a class="tag_menu" href="shop.html">SHOP</a>
+                    </li>
+					
+                    <li>
+                        <a class="tag_menu active_tab" href="products.html">PRODUCT</a>
+                    </li>
+					
+					 <li>
+                        <a class="tag_menu" href="contact.html">CONTACT</a>
+                    </li>
+					
+					<li class="dropdown">
+					  <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="blog.html">Home</a></li>
+						<li><a href="blog.html">Blogpost</a></li>
+						<li><a href="blog.html">Detail</a></li>
+						<li><a href="blog.html">shop</a></li>
+					  </ul>
+                    </li>
+					
+                </ul>
+				 <ul class="nav navbar-nav navbar-right">
+				   <li class="dropdown">
+					  <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-shopping-bag"></i><span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a class="tag_menu_down" href="#">No products in the cart</a></li>
+					  </ul>
+                    </li>
+			       <li class="dropdown"><a href="#" class="top_tab dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-search"></i></a>
+                    <ul class="dropdown-menu" style="min-width: 300px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form class="navbar-form navbar-left" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">
+                                                Go!</button>
+                                        </span>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+				 </ul>
+				 <section id="side_box">
+				
+				  <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="glyphicon glyphicon-list"></i></a>
+					<div id="sidebar-wrapper" class="">
+					  <ul class="sidebar-nav">
+						<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a>
+						<li class="sidebar-brand">
+						  <a href="index.html">DIGI HUB</a>						</li>
+					  </ul>
+					  <div class="wrap_inner clearfix text-center">
+					   <img class="img-circle i_width" src="img/1.jpg" alt="abc">
+					   <p class="para_1"> Lorem ipsum dolor sit amet,  adipiscing elit integer nec odio.</p>
+					   <div class="top_right clearfix">
+								<p>
+								 <a href="#"><i class="fa fa-pinterest"></i></a>
+								 <a href="#"><i class="fa fa-linkedin"></i></a>
+								 <a href="#"><i class="fa fa-dribbble"></i></a>
+								 <a href="#"><i class="fa fa-facebook"></i></a>
+								 <a href="#"><i class="fa fa-twitter"></i></a>
+								</p>
+	                   </div>
+					   <div class="grid wrap_inner_1 clearfix">
+					
+					    <figure class="effect-bubba">
+						<img src="img/2.jpg" alt="img16"/>
+						<figcaption>
+							<h2>Digi <span>Hub</span></h2>
+							<p>Lorem ipsum dolor sit elit integer nec odio.</p>
+							<a href="#">View more</a>						</figcaption>			
+		  </figure>
+	                    </div>
+					   
+					  </div>
+					  <div class="wrap_inner_2 clearfix">
+					    <h2>Contact Us</h2>
+						<input class="form-control" placeholder="Name" type="text">
+						<input class="form-control" placeholder="Email" type="text">
+						<input class="form-control" placeholder="Phone" type="text">
+						<textarea class="form-control form_1" placeholder="Type Text Here"></textarea>
+						<h3 class="text-center"><a href="#">Subscribe</a></h3>
+			
+					  </div>
+					  
+					</div>
+		
+	          </section>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+  
+  <section id="shop" class="clearfix">
+   <div class="shop_head">
+    <div class="container">
+    <div class="row">
+	 <div class="shop clearfix">
+	  <h2>Dapibus Diam</h2>
+	 </div>
+	</div>
+   </div>
+   </div>
+  </section>
+  
+  <section id="products" class="clearfix">
+   <div class="container">
+    <div class="row">
+	 <div class="products clearfix">
+	  <div class="col-sm-7 products_left clearfix">
+	   <div class="products_left_inner">
+           <div id="main_area">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="col-sm-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="col-sm-12" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                        <img class="i_full" src="img/58.jpg" alt="abc"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                        <img class="i_full" src="img/59.jpg" alt="abc"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                        <img class="i_full" src="img/60.jpg" alt="abc"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                        <img class="i_full" src="img/61.jpg" alt="abc"></div>
+                                    </div><!-- Carousel nav -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>                                       
+                                    </a>                                
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/Slider-->
+
+                <div class="row" id="slider-thumbs">
+                        <!-- Bottom switcher of slider -->
+                        <ul class="hide-bullets">
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-0"><img src="img/58.jpg" alt="abc"></a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="img/59.jpg" alt="abc"></a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="img/60.jpg" alt="abc"></a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="img/61.jpg" alt="abc"></a>
+                            </li>
+
+                        </ul>                 
+                </div>
+        </div>
+	   </div>
+	  </div>
+	  <div class="col-sm-5 products_right clearfix">
+	   <div class="products_right_inner">
+	    <h2>Augue Egit</h2>
+		<h5><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><span class="rating_2"><a href="#">(2 customer review)</a></span></h5>
+		<h3><span class="rating_1">$200.00</span> $150.00</h3>
+		<p>Fusce nec tellus sed augue semper porta, Mauris massa,<br> aptent taciti sociosqu ad litora torquent conubia nostra.</p>
+		<div class="details_2_right_inner_2 clearfix">
+	    <div class="col-sm-3 details_2_right_inner_2_left clearfix">
+		 <div class="details_2_right_inner_2_left_inner">
+		  <div class="input-group spinner">
+    <input type="text" class="form-control form-control_down" value="1">
+    <div class="input-group-btn-vertical">
+      <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+      <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+    </div>
+  </div>
+		 </div>
+		</div>
+		<div class="col-sm-5 details_2_right_inner_2_right clearfix">
+		 <div class="details_2_right_inner_2_right_inner">
+		  <h5><a href="#">Add to cart</a></h5>
+		 </div>
+		</div>
+	   </div>
+	    <h1>SED:<span class="rating_3">005</span> </h1>
+		<h1>Sagittis:<span class="rating_3">Vestibulum</span> </h1>
+		<h1>Arcu:<span class="rating_3">Porta, Dapibus</span> </h1>
+		<h1>Share:<span class="rating_3"><a href="#"><i class="fa fa-facebook-f"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-pinterest-p"></i></a><a href="#"><i class="fa fa-tumblr"></i></a></span> </h1>
+	   </div>
+	   <div class="products_right_inner_2 cleafix">
+	    <div class="middle_1_para clearfix">
+		
+		   <ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Consectetur</a></li>
+  <li><a data-toggle="tab" href="#menu1">Adipiscing Imperdiet</a></li>
+  <li><a data-toggle="tab" href="#menu2">Conubia (1)</a></li>
+</ul>
+
+<div class="tab-content clearfix">
+  <div id="home" class="tab-pane fade in active clearfix">
+     <div class="click clearfix">
+   <div class="drisciption_top_1 clearfix">
+    <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu.</p>
+   </div>
+   </div>
+  </div>
+  <div id="menu1" class="tab-pane fade clearfix">
+	 <div class="click clearfix">
+      <div class="drisciption_top_2 clearfix">
+	   <h4>Weight	<span class="rating_4">5 kg</span></h4>
+	   <h4>Dimensions	<span class="rating_4">120 x 160 x 400 cm</span></h4>
+	  </div>
+   </div>
+  </div>
+  <div id="menu2" class="tab-pane fade clearfix">
+	 <div class="click clearfix">
+	 <div class="drisciption_top_3 clearfix">
+	 <div class="col-sm-12 details_middle_left_top clearfix">
+	   <h4>COMMENTS</h4>
+	  <div class="col-sm-2 details_middle_left_top_left clearfix">
+	   <div class="details_middle_left_top_left_inner clearfix">
+	    <p><a href="#"><img src="img/38.jpg" class="img-circle" alt="abc"></a></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-10 details_middle_left_top_right clearfix">
+	  <div class="details_middle_left_top_right_inner clearfix">
+	   <h4><a href="#">Fusce!</a></h4>
+	   <h5><a href="#">Elementum </a>Submitted by admin on Fri, 07/17/2014 - 09:30</h5>
+	   <h6>I like diam.</h6>
+	   <p><a href="#"><i class="fa fa-plus-circle"></i>Log in </a>to post comments</p>
+	   </div>
+	  </div>
+	 </div>
+	 </div>
+	 <div class="details_main_4 details_main_4_product clearfix">
+	  <h4>Leave a comment</h4>
+	  <div class="details_main_4_inner clearfix">
+	   <div class="col-sm-6 details_main_4_inner_left clearfix">
+	    <div class="details_main_4_inner_left_1">
+		 <input type="text" class="  search-query form-control form-control_detail" placeholder="Your Name">
+		</div>
+	   </div>
+	   <div class="col-sm-6 details_main_4_inner_left clearfix">
+	    <div class="details_main_4_inner_left_1">
+		 <input type="text" class="  search-query form-control form-control_detail" placeholder="Your Email">
+		</div>
+	   </div>
+	  </div>
+	  <div class="details_main_4_inner_2">
+	   <textarea id="edit-submitted-your-message" name="submitted[your_message]" cols="60" placeholder="Your Massage*" rows="5" class="form-textarea form-textarea_new" style="color: grey;"></textarea>
+	   <h5><a href="#">SUBMIT</a></h5>
+	  </div>
+	 </div>
+   </div>
+  </div>
+</div>
+
+		
+		</div>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </section>
+  
+  <section id="relation">
+  <div class="container">
+   <div class="row">
+    <div class="shop_2_left_top_head clearfix">
+	 <h2>Dignissim lacinia</h2>
+	</div>
+    <div class="shop_2_left_top_2 clearfix">
+	    <div class="col-sm-3 shop_2_left_top_2_left clearix">
+		 <div class="shop_2_left_top_2_left_inner_1 clearix">
+		  <div class="ih-item square effect3 bottom_to_top"><a href="#">
+                      <div class="img"><img src="img/45.jpg" alt="img"></div>
+                      <div class="info">
+                        <h3>add to cart</h3>
+                      </div></a></div>
+		 </div>
+		 <div class="shop_2_left_top_2_left_inner_2 clearfix">
+		  <div class="col-sm-5 crafting_left clearfix">
+		   <div class="crafting_left_inner">
+		    <h5><a href="#">Augue Egit</a></h5>
+		   </div>
+		  </div>
+		  <div class="col-sm-7 crafting_right clearfix">
+		   <div class="crafting_right_inner">
+		    <p><span class="rating">$400.00</span> $350.00</p>
+		   </div>
+		  </div>
+		 </div>
+		 <div class="shop_2_left_top_2_left_inner_3 pull-right clearfix">
+		  <p>Sale</p>
+		 </div>
+		</div>
+		<div class="col-sm-3 shop_2_left_top_2_left clearix">
+		 <div class="shop_2_left_top_2_left_inner_1 clearix">
+		  <div class="ih-item square effect3 bottom_to_top"><a href="#">
+                      <div class="img"><img src="img/46.jpg" alt="img"></div>
+                      <div class="info">
+                        <h3>add to cart</h3>
+                      </div></a></div>
+		 </div>
+		 <div class="shop_2_left_top_2_left_inner_2 clearfix">
+		  <div class="col-sm-6 crafting_left clearfix">
+		   <div class="crafting_left_inner">
+		    <h5><a href="#">Mauris Massa</a></h5>
+		   </div>
+		  </div>
+		  <div class="col-sm-6 crafting_right clearfix">
+		   <div class="crafting_right_inner">
+		    <p class="text-right"> $200.00</p>
+		   </div>
+		  </div>
+		 </div>
+		</div>
+		<div class="col-sm-3 shop_2_left_top_2_left clearix">
+		 <div class="shop_2_left_top_2_left_inner_1 clearix">
+		  <div class="ih-item square effect3 bottom_to_top"><a href="#">
+                      <div class="img"><img src="img/47.jpg" alt="img"></div>
+                      <div class="info">
+                        <h3>add to cart</h3>
+                      </div></a></div>
+		 </div>
+		 <div class="shop_2_left_top_2_left_inner_2 clearfix">
+		  <div class="col-sm-6 crafting_left clearfix">
+		   <div class="crafting_left_inner">
+		    <h5><a href="#">Semper Porta</a></h5>
+		   </div>
+		  </div>
+		  <div class="col-sm-6 crafting_right clearfix">
+		   <div class="crafting_right_inner">
+		    <p class="text-right">$280.00</p>
+		   </div>
+		  </div>
+		 </div>
+		 <div class="shop_2_left_top_2_left_inner_3 pull-right clearfix">
+		  <p>New</p>
+		 </div>
+		</div>
+		<div class="col-sm-3 shop_2_left_top_2_left clearix">
+		 <div class="shop_2_left_top_2_left_inner_1 clearix">
+		  <div class="ih-item square effect3 bottom_to_top"><a href="#">
+                      <div class="img"><img src="img/49.jpg" alt="img"></div>
+                      <div class="info">
+                        <h3>add to cart</h3>
+                      </div></a></div>
+		 </div>
+		 <div class="shop_2_left_top_2_left_inner_2 clearfix">
+		  <div class="col-sm-6 crafting_left clearfix">
+		   <div class="crafting_left_inner">
+		    <h5><a href="#">Conubia Nostra</a></h5>
+		   </div>
+		  </div>
+		  <div class="col-sm-6 crafting_right clearfix">
+		   <div class="crafting_right_inner">
+		    <p class="text-right">$250.00</p>
+		   </div>
+		  </div>
+		 </div>
+		 <div class="shop_2_left_top_2_left_inner_3 pull-right clearfix">
+		  <p>Sold</p>
+		 </div>
+		</div>
+	   </div>
+   </div>
+  </div>
+  </section>
+  
+  <section id="footer" class="clearfix">
+   <div class="container">
+    <div class="row">
+	<div class="footer clearfix">
+	 <div class="col-sm-4 footer_left clearfix">
+	  <div class="footer_left_inner">
+	   <h4>Semper Porta</h4>
+	   <h3><a href="#">Praesent Mauris Nec</a></h3>
+	   <h2><a href="#">23. Apr 2017.</a></h2>
+	   <h3><a href="#">Nulla Quis Sem</a></h3>
+	   <h2><a href="#">26. Apr 2017.</a></h2>
+	  </div>
+	 </div>
+	 <div class="col-sm-4 footer_middle clearfix">
+	  <div class="footer_middle_inner">
+	   <h2><a href="#">Wedding Plan</a></h2>
+	   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio libero<br> quis sem at nibh elementum imperdiet</p>
+	   <h3>Email us: <a href="#">info@gmail.com</a></h3>
+	   <h3>Phone us: <a href="#"> 6394 835 2525</a></h3>
+	   <h3>Visit us: <a href="#">92 Semper Porta Bk, USA</a></h3>
+	  </div>
+	 </div>
+	 <div class="col-sm-4 footer_center clearfix">
+	  <div class="footer_left_inner">
+	   <h4>Fusce Porta</h4>
+	   <h3><a href="#">Sed Massa</a></h3>
+	   <h3><a href="#">Duis The Arcu</a></h3>
+	   <h3><a href="#">KGRT</a></h3>
+	   <h3><a href="#">Our Services</a></h3>
+	  </div>
+	 </div>
+	</div>
+	<div class="footer_last clearfix">
+	 <p class="website">© 2013 Your Website Name. All rights reserved | Design by<a href="http://www.templateonweb.com"> TemplateOnWeb</a></p>
+	</div>
+	</div>
+   </div>
+  </section>
+  
+  
+  <script>
+	  jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: 5000
+        });
+ 
+        $('#carousel-text').html($('#slide-content-0').html());
+ 
+        //Handles the carousel thumbnails
+       $('[id^=carousel-selector-]').click( function(){
+            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+            var id = parseInt(id);
+            $('#myCarousel').carousel(id);
+        });
+ 
+ 
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+});
+	</script>
+	
+  <script>
+	$(function(){
+
+    $('.spinner .btn:first-of-type').on('click', function() {
+      var btn = $(this);
+      var input = btn.closest('.spinner').find('input');
+      if (input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max'))) {    
+        input.val(parseInt(input.val(), 10) + 1);
+      } else {
+        btn.next("disabled", true);
+      }
+    });
+    $('.spinner .btn:last-of-type').on('click', function() {
+      var btn = $(this);
+      var input = btn.closest('.spinner').find('input');
+      if (input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min'))) {    
+        input.val(parseInt(input.val(), 10) - 1);
+      } else {
+        btn.prev("disabled", true);
+      }
+    });
+
+})
+	</script>
+ <script>
+	  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+	</script>
+ <script>
+$(document).ready(function(){
+
+/*****Fixed Menu******/
+var secondaryNav = $('.cd-secondary-nav'),
+   secondaryNavTopPosition = secondaryNav.offset().top;
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > secondaryNavTopPosition ) {
+			secondaryNav.addClass('is-fixed');	
+		} else {
+			secondaryNav.removeClass('is-fixed');
+		}
+	});	
+	
+});
+</script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+
+</body>
+      
+</html>
